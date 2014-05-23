@@ -7394,6 +7394,7 @@ Based on  the following source:
 <part name="L2" library="resistor" deviceset="L-EU" device="L3230M" value="10mH"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="R0805" value="1K"/>
 </parts>
 <sheets>
 <sheet>
@@ -7428,6 +7429,7 @@ Based on  the following source:
 <instance part="L2" gate="G$1" x="154.94" y="38.1" rot="R270"/>
 <instance part="JP1" gate="A" x="172.72" y="152.4"/>
 <instance part="GND3" gate="1" x="160.02" y="144.78"/>
+<instance part="R3" gate="G$1" x="175.26" y="93.98" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7662,13 +7664,30 @@ Based on  the following source:
 <junction x="165.1" y="45.72"/>
 <wire x1="165.1" y1="45.72" x2="182.88" y2="45.72" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="93.98" x2="154.94" y2="93.98" width="0.1524" layer="91"/>
+<label x="154.94" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="!RESET"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="93.98" x2="180.34" y2="93.98" width="0.1524" layer="91"/>
+</segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
+<approved hash="104,1,81.28,91.44,U$1,USB-5V,USB_VCC,,,"/>
 <approved hash="204,1,30.48,144.78,U$1,ADC_3V3,,,,"/>
-<approved hash="202,1,182.88,93.98,U$2,!RESET,,,,"/>
+<approved hash="104,1,210.82,127,U$2,3V3,RADIO_3V3,,,"/>
+<approved hash="104,1,210.82,83.82,U$2,GND,RADIO_GND,,,"/>
+<approved hash="113,1,28.2617,26.67,LED2,,,,,"/>
+<approved hash="113,1,18.1017,26.67,LED1,,,,,"/>
+<approved hash="113,1,170.417,155.071,JP1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
