@@ -7670,11 +7670,20 @@ Based on  the following source:
 <label x="154.94" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="RADIO_!RST" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="!RESET"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="93.98" x2="180.34" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="93.98" x2="182.88" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="88.9" x2="154.94" y2="88.9" width="0.1524" layer="91"/>
+<junction x="182.88" y="93.98"/>
+<label x="154.94" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="CA6"/>
+<wire x1="30.48" y1="86.36" x2="12.7" y2="86.36" width="0.1524" layer="91"/>
+<label x="12.7" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
