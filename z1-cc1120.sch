@@ -7686,6 +7686,18 @@ Based on  the following source:
 <label x="12.7" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="RADIO_CCA_STATUS" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="GPIO3"/>
+<wire x1="220.98" y1="101.6" x2="251.46" y2="101.6" width="0.1524" layer="91"/>
+<label x="226.06" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="TB3"/>
+<wire x1="30.48" y1="104.14" x2="5.08" y2="104.14" width="0.1524" layer="91"/>
+<label x="5.08" y="104.14" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
