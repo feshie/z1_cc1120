@@ -7413,6 +7413,9 @@ Based on  the following source:
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="usb" width="0.3048" drill="0">
+<clearance class="1" value="0.1524"/>
+</class>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device="" value="POWER"/>
@@ -7600,7 +7603,7 @@ Based on  the following source:
 <pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="USB_D+" class="0">
+<net name="USB_P" class="1">
 <segment>
 <pinref part="U$1" gate="G$1" pin="D_P"/>
 <wire x1="81.28" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
@@ -7612,7 +7615,7 @@ Based on  the following source:
 <label x="96.52" y="43.18" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
-<net name="USB_D-" class="0">
+<net name="USB_N" class="1">
 <segment>
 <pinref part="U$1" gate="G$1" pin="D_N"/>
 <wire x1="81.28" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
