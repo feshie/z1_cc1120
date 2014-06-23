@@ -563,7 +563,7 @@ Based on  the following source:
 <clearance class="1" value="0.1524"/>
 </class>
 </classes>
-<designrules name="Hackvana">
+<designrules name="Hackvana *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -631,8 +631,8 @@ design rules under a new name.</description>
 <param name="mvCreamFrame" value="0"/>
 <param name="mlMinStopFrame" value="2mil"/>
 <param name="mlMaxStopFrame" value="2mil"/>
-<param name="mlMinCreamFrame" value="0mil"/>
-<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlMinCreamFrame" value="0.15mm"/>
+<param name="mlMaxCreamFrame" value="0.15mm"/>
 <param name="mlViaStopLimit" value="100mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
